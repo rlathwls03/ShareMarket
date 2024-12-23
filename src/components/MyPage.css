@@ -1,0 +1,75 @@
+/* MyPage 스타일 */
+.mypage {
+    padding: 20px;
+    max-width: 400px; /* 폼의 최대 너비 설정 */
+    margin: 50px auto; /* 화면 가운데 정렬 */
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    color: #0078d4; /* 제목 색상 */
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #0078d4;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #005a9e;
+  }
+  
+  .success-message {
+    color: green;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .signup-link {
+    color: #0078d4;  /* 링크 색상 */
+    text-decoration: underline;  /* 밑줄 추가 */
+    text-align: center;  /* 중앙 정렬 */
+  }
+  
+  .signup-link:hover {
+    text-decoration: none;  /* 호버 시 밑줄 없애기 (선택 사항) */
+  }
+  
+  /* 반응형 디자인 */
+  @media (max-width: 600px) {
+    .mypage {
+      padding: 15px;
+      width: 90%; /* 작은 화면에서 폼의 너비를 90%로 설정하여 더 유동적으로 */
+    }
+  }
+  

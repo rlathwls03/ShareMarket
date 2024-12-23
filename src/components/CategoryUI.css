@@ -1,0 +1,23 @@
+.category-ui {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin: 5px 0;
+  }
+  
+  li a {
+    text-decoration: none;
+    color: blue;
+  }
+  
+  li a:hover {
+    text-decoration: underline;
+  }
+  

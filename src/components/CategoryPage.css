@@ -1,0 +1,111 @@
+.category-page {
+  padding: 20px;
+  max-width: 1000px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.category-page h2 {
+  text-align: center;
+  color: #0078d4;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* 테이블 스타일 */
+.post-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.post-table th,
+.post-table td {
+  padding: 15px;
+  border: 1px solid #ddd;
+  text-align: center; /* 가로 방향 가운데 정렬 */
+  vertical-align: middle; /* 세로 방향 가운데 정렬 */
+}
+
+.post-table th {
+  background-color: #0078d4;
+  color: white;
+  font-size: 1rem;
+}
+
+.post-table tbody tr:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.post-table td {
+  font-size: 1rem;
+  color: #333;
+}
+
+.post-table .post-title a {
+  color: #0078d4;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.post-table .post-title a:hover {
+  color: #005bb5;
+  text-decoration: underline;
+}
+
+/* 게시물이 없을 때 */
+.no-posts {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #777;
+  margin-top: 20px;
+}
+
+/* 페이징 버튼 스타일 */
+.pagination-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination-buttons button {
+  background-color: #0078d4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin: 0 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pagination-buttons button:hover {
+  background-color: #005bb5;
+}
+
+.pagination-buttons button:disabled {
+  background-color: #ddd;
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+/* 애니메이션 효과 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

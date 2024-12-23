@@ -1,0 +1,93 @@
+/* 검색 결과 페이지 전체 레이아웃 */
+.search-results {
+  padding: 20px;
+  max-width: 1000px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-results h2 {
+  text-align: center;
+  color: #0078d4;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* 테이블 스타일 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin: 0 auto; /* 수평 가운데 정렬 */
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+thead th {
+  background-color: #0078d4;
+  color: #000000;
+  padding: 15px;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+tbody td {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* 번호 열 스타일 */
+td:first-child {
+  text-align: center;
+  font-weight: bold;
+  color: #555;
+}
+
+/* 페이징 버튼 스타일 */
+.pagination-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 5px;
+}
+
+.pagination-buttons button {
+  background-color: #0078d4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.pagination-buttons button:hover {
+  background-color: #005bb5;
+}
+
+.pagination-buttons button.active {
+  background-color: #005bb5;
+  font-weight: bold;
+}
+
+.pagination-buttons button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* 검색 결과가 없을 때 */
+.no-results {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #777;
+  margin-top: 20px;
+}
