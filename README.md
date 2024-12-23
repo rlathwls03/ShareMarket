@@ -15,25 +15,24 @@
 ## 실행 환경
 
 이 프로젝트는 **Node.js** 환경에서 실행되며, 다음이 필요합니다:
+
 - **Node.js** (버전 14 이상 권장)
 - **npm** (Node Package Manager)
 - **mySQL workbench**
 ```
 
-
-
-
 ## 설치 및 실행 방법
 
-
 1. mySQL에 데이터베이스를 생성합니다
+
    ```bash
-   데이터베이스 명 : secondHanMarket
-   
+   데이터베이스 명 : secondHandMarket
+
    create database secondHandMarket;
    ```
-   
+
 2. 실행에 필요한 테이블을 생성합니다.
+
    ```bash
    user 테이블
    CREATE TABLE users (
@@ -43,7 +42,7 @@
       password VARCHAR(255) NOT NULL,  -- 해시된 비밀번호
       email VARCHAR(255) UNIQUE NOT NULL  -- 이메일
    );
-   
+
    posts 테이블
    CREATE TABLE posts (
       id INT AUTO_INCREMENT PRIMARY KEY,
@@ -54,7 +53,7 @@
       username VARCHAR(255) NOT NULL,  -- 로그인한 사용자 이름을 저장
       created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
    );
-   
+
    comments 테이블
    CREATE TABLE comments (
       id INT AUTO_INCREMENT PRIMARY KEY,
@@ -65,25 +64,29 @@
       FOREIGN KEY (postId) REFERENCES posts(id) ON DELETE CASCADE, -- 게시물 삭제 시 댓글도 삭제
       visibility ENUM('public', 'private') DEFAULT 'public'
    );
-   
+
    ```
 
-2. server.js 파일의 mySQL 연결 속성을 변경합니다.
+3. server.js 파일의 mySQL 연결 속성을 변경합니다.
+
    ```bash
    ![server_change](./server_change.png)
    ```
 
 4. 프로젝트 디렉토리로 이동 후, 필요한 라이브러리를 설치합니다:
+
    ```bash
    npm install express mysql2 bcryptjs jsonwebtoken cors multer
    ```
 
 5. 서버를 실행합니다:
+
    ```bash
    node server.js
    ```
 
 6. 프론트엔드 디렉토리로 이동 후, 필요한 라이브러리를 설치합니다:
+
    ```bash
    npm install
    ```
@@ -96,10 +99,15 @@
 ## 사용 기술 스택
 
 ### Frontend
+
 - **React.js**
 - **React Router**
 
 ### Backend
+
 - **Node.js**
 - **MySQL**
+
+```
+
 ```
